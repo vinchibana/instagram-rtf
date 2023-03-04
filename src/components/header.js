@@ -12,23 +12,23 @@ export default function Header() {
   const history = useHistory();
 
   return (
-    <header className="h-16 bg-white border-b border-gray-400 mb-8">
-      <div className="container mx-auto max-w-screen-lg h-full">
-        <div className="flex justify-between h-full">
-          <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
-            <h1 className="flex justify-center w-full">
+    <header className="mb-8 h-16 border-b border-gray-400 bg-white">
+      <div className="container mx-auto h-full max-w-screen-lg">
+        <div className="flex h-full justify-between">
+          <div className="align-items flex cursor-pointer items-center text-center text-gray-700">
+            <h1 className="flex w-full justify-center">
               <Link to={Routes.DASHBOARD} aria-label="Instagram logo">
                 <img src="/images/logo.png" className="mt-2 w-6/12" alt="" />
               </Link>
             </h1>
           </div>
 
-          <div className="text-gray-700 text-center flex items-center align-items">
+          <div className="align-items flex items-center text-center text-gray-700">
             {loggedInUser ? (
               <>
                 <Link to={Routes.DASHBOARD}>
                   <svg
-                    className="w-8 mr-6 text-black-light cursor-pointer"
+                    className="text-black-light mr-6 w-8 cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -58,7 +58,7 @@ export default function Header() {
                   }}
                 >
                   <svg
-                    className="w-8 mr-6 text-black-light cursor-pointer"
+                    className="text-black-light mr-6 w-8 cursor-pointer"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
